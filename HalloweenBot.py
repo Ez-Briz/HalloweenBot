@@ -235,11 +235,11 @@ async def _reload(ctx:SlashContext):
     await ctx.send(reloadMessage)
 
 @slash.slash(
-    name = "Role", # Role name
+    name = "HRole", # Role name
     description= "Gives you random role from a pool", # Description for current command
     guild_ids=[721836486751944754, 718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
-async def _role(ctx:SlashContext):
+async def _hrole(ctx:SlashContext):
     if not isBotActive:
         await ctx.send(notActiveMessage)
         return
