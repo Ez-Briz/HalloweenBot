@@ -19,7 +19,6 @@ isBotActive = False
 ########################################################################################################################
 ########################################################################################################################
 timeToWait = 3
-ROLENAME = 'Eblo'
 callAdminMessage = "У Вас нет доступа. Обратитесь к создателю бота -> https://vk.com/eznekit"
 notActiveMessage = "Бот неактивен. Попробуйте позже."
 waitMessage = "Подождите " + str(timeToWait) + " секунды, прежде чем попробовать снова!"
@@ -208,7 +207,7 @@ userPerson = {}
 @slash.slash(
     name = "Start", # Role name
     description= "Start or stop bot", # Description for current command
-    guild_ids=[718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
+    guild_ids=[718885084199125114, 721836486751944754] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
 async def _start(ctx:SlashContext):
     global pers, userPerson, isBotActive, persSave
@@ -221,7 +220,7 @@ async def _start(ctx:SlashContext):
 @slash.slash(
     name = "Reload", # Role name
     description= "Reload current halloween list", # Description for current command
-    guild_ids=[718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
+    guild_ids=[718885084199125114, 721836486751944754] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
 async def _reload(ctx:SlashContext):
     global persSave, pers, userPerson
@@ -238,7 +237,7 @@ async def _reload(ctx:SlashContext):
 @slash.slash(
     name = "Role", # Role name
     description= "Gives you random role from a pool", # Description for current command
-    guild_ids=[718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
+    guild_ids=[718885084199125114, 721836486751944754] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
 async def _role(ctx:SlashContext):
     if not isBotActive:
