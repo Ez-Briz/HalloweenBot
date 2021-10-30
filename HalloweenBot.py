@@ -215,7 +215,7 @@ async def _start(ctx:SlashContext):
         await ctx.send(callAdminMessage)
         return
     isBotActive = not isBotActive
-    await ctx.send(currentStatusMessage + ' Текущий статус: ' + '**Запущен**' if isBotActive else '**Отключён**')
+    await ctx.send(currentStatusMessage + ' Текущий статус: ' + ('**Запущен**' if isBotActive else '**Отключён**'))
 
 @slash.slash(
     name = "Reload", # Role name
