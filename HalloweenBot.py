@@ -205,7 +205,7 @@ userPerson = {}
 ########################################################################################################################
 
 @slash.slash(
-    name = "Start", # Role name
+    name = "Start", # Command name
     description= "Start or stop bot", # Description for current command
     guild_ids=[721836486751944754, 718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
@@ -218,7 +218,7 @@ async def _start(ctx:SlashContext):
     await ctx.send(currentStatusMessage + ' Текущий статус: ' + ('**Запущен**' if isBotActive else '**Отключён**'))
 
 @slash.slash(
-    name = "Reload", # Role name
+    name = "Reload", # Command name
     description= "Reload current halloween list", # Description for current command
     guild_ids=[721836486751944754, 718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
@@ -235,7 +235,7 @@ async def _reload(ctx:SlashContext):
     await ctx.send(reloadMessage)
 
 @slash.slash(
-    name = "HRole", # Role name
+    name = "HRole", # Command name
     description= "Gives you random role from a pool", # Description for current command
     guild_ids=[721836486751944754, 718885084199125114] # Channel ID (right click to channel -> copy ID (with developer mod in discord settings))
 )
