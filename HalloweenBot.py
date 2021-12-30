@@ -298,4 +298,4 @@ async def on_ready():
     print(f"Bot have logged in as {client.user}")
 
 
-client.run("ODk4NTQ2ODgxNDEwNDk4NTg5.YWly_g.kjArGrZn5iSW7hWavd2ZLhmf5P0")
+client.run("") # BOT TOKEN
